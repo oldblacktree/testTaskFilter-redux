@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #5076d9;
+	user-select: none;
+}
+ul {
+	list-style: none;
+}
+
+a:hover {
+	color: red;
+}
+
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ebf3fc;
+	padding: 25px 20px 10px;
+}
+
+.filter-item {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 25%;
+	max-width: 25%;
+	padding: 0 5px 20px;
+}
+
+.filter-toggler {
+	width: 100%;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	height: 36px;
+	border: 1px solid rgba(113, 123, 163, 0.3);
+	cursor: pointer;
+	line-height: 36px;
+	padding: 0 30px 0 15px;
+	background: #fff;
+	border-radius: 8px;
+}
+
+.filter-toggler span {
+	user-select: none;
+}
+
+.filter-toggler:hover {
+	border-color: #5076d9;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	font-weight: 500;
+	padding: 7.9px 20px;
+	background-color: #5076d9;
+	color: #fff;
+	border: 0.5px solid #fff;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #3b64cc;
+}
+.dropDown {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
+	position: absolute;
+	min-width: 100%;
+	top: 75%;
+	left: 0;
+	background-color: #fff;
+	z-index: 50;
+	border: 1px solid #d9e3fa;
+	box-shadow: 0 2px 6px rgba(58, 74, 133, 0.07);
+	border-radius: 5px;
+	padding: 5px 0 15px;
+	color: #253a70;
+	max-width: 280px;
+}
+
+.dropDown-search {
+	padding: 0 5px 5px;
+	border-bottom: 1px solid #d9e3fa;
+}
+.dropDown-search__input {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 2px 10px 0;
+	border-radius: 5px;
+	border: 1px solid #d9e3fa;
+	color: #253a70;
+}
+.dropDown-search__input:hover {
+	border-color: #5076d9;
+}
+.dropDown-list {
+	max-height: 268px;
+	overflow-x: hidden;
+	position: relative;
+}
+.dropDown-list__item {
+	padding: 7px 10px;
+	user-select: none;
+	display: block;
+	cursor: pointer;
+}
+.dropDown-list__item--none {
+	display: none;
+}
+
+.dropDown-list__item label {
+	display: flex;
+	align-items: center;
+}
+
+.dropDown-list__item span {
+	display: block;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.dropDown-list__item:hover {
+	background-color: #ebf3fc;
+}
+
+.dropDown-reset {
+	display: block;
+	padding: 10px 10px 5px;
+	user-select: none;
+	text-align: center;
+}
